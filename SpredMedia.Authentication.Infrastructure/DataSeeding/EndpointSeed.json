@@ -1,0 +1,22 @@
+[
+  {
+    "id": "92e3c0ef-d1f2-4fe4-9940-1d6a37765244",
+    "createdAt": "2023-07-06T00:00:00Z",
+    "updatedAt": "2023-07-06T00:00:00Z",
+    "controllerName": "Controller 1",
+    "endpoint": "/endpoint1",
+    "channel": "Channel 1",
+    "method": "Method 1",
+    "clients": []
+  },
+  {
+    "id": "52f8b173-8b8b-413d-b1af-8c951db2f62a",
+    "createdAt": "2023-07-06T00:00:00Z",
+    "updatedAt": "2023-07-06T00:00:00Z",
+    "controllerName": "Controller 2",
+    "endpoint": "/endpoint2",
+    "channel": "Channel 2",
+    "method": "Method 2",
+    "clients": []
+  }
+]

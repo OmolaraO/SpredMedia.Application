@@ -1,0 +1,26 @@
+[
+  {
+    "id": "SpredMedia000001",
+    "createdAt": "2023-07-06T00:00:00Z",
+    "updatedAt": "2023-07-06T00:00:00Z",
+    "clientPassword": "c7ef571503820455d38731345d1d88996db637cca46a2e544a2b3ac7df35663c",
+    "clientUsername": "SpredMediaAdmin",
+    "clientSecret": "95de9d7990c50c00f344f1bea3e0436d3756ed315fa87f6cb64e01b9193a7f4a",
+    "companyName": "Spred Media Technology",
+    "companyEmail": "Admin@Spred.Media",
+    "companyPhone": "123-456-7891",
+    "endpoints": []
+  },
+  {
+    "id": "6c617db2-42e4-4d95-95a6-ecb8ae7e731a",
+    "createdAt": "2023-07-06T00:00:00Z",
+    "updatedAt": "2023-07-06T00:00:00Z",
+    "clientPassword": "5baa61e4c9b93f3f0682250b6cf8331b7ee68fd8e08a1014e52f8f94",
+    "clientUsername": "username2",
+    "clientSecret": "lfphFkz6zR6uG6Ollp+RboIEU+4rCP0sMT8C6GzNgxQ=",
+    "companyName": "Company 2",
+    "companyEmail": "company2@example.com",
+    "companyPhone": "123-456-7892",
+    "endpoints": []
+  }
+]

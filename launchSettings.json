@@ -1,0 +1,14 @@
+{
+  "profiles": {
+    "Docker Compose": {
+      "commandName": "DockerCompose",
+      "commandVersion": "1.0",
+      "serviceActions": {
+        "spredmedia.authentication.api": "StartWithoutDebugging",
+        "spredmedia.notification.api": "StartWithoutDebugging",
+        "spredmedia.usermanagement.api": "StartDebugging",
+        "spredmedia.apigateway": "StartDebugging"
+      }
+    }
+  }
+}

@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>disable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Entity\" />
+    <None Remove="Enum\" />
+    <None Remove="Common\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Entity\" />
+    <Folder Include="Enum\" />
+    <Folder Include="Common\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SpredMedia.CommonLibrary\SpredMedia.CommonLibrary.csproj" />
+  </ItemGroup>
+</Project>

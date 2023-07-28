@@ -1,0 +1,43 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <DockerComposeProjectPath>../docker-compose.dcproj</DockerComposeProjectPath>
+    <UserSecretsId>4bf4f147-c880-4306-be5c-fd73149f7573</UserSecretsId>
+    <GenerateDocumentationFile>True</GenerateDocumentationFile>
+  </PropertyGroup>
+
+  <PropertyGroup Condition=" '$(RunConfiguration)' == 'SpredMedia.Application' " />
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="6.0.9">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.9" />
+    <PackageReference Include="Serilog" Version="2.12.0" />
+    <PackageReference Include="Serilog.Sinks.AzureBlobStorage" Version="3.2.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\SpredMedia.CommonLibrary\SpredMedia.CommonLibrary.csproj" />
+    <ProjectReference Include="..\SpredMedia.UserManagement.Core\SpredMedia.UserManagement.Core.csproj">
+      <GlobalPropertiesToRemove></GlobalPropertiesToRemove>
+    </ProjectReference>
+    <ProjectReference Include="..\SpredMedia.UserManagement.Infrastructure\SpredMedia.UserManagement.Infrastructure.csproj">
+      <GlobalPropertiesToRemove></GlobalPropertiesToRemove>
+    </ProjectReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Controllers\" />
+    <Folder Include="Extensions\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Extensions\" />
+  </ItemGroup>
+</Project>

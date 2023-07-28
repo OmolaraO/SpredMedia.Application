@@ -1,0 +1,230 @@
+﻿[
+  {
+    "Id": "eae76e54-2b14-48c7-a097-2c086c01bc6a",
+    "FirstName": "Samuel",
+    "LastName": "Oniyilo",
+    "UserName": "codeApe",
+    "EmailAddress": "masterarcher6321@gmail.com",
+    "Password": "",
+    "Profiles": [
+      {
+        "Id": "21eae76e54-2b14-48c7-a097-2c086c01bc6a",
+        "UserName": "codeApe01",
+        "Address": "73, Raimi Oladimeji Street",
+        "DateOfBirth": "28/02/1993",
+        "PhoneNumber": "08063519423",
+        "Gender": "Male",
+        "ImageUrl": "",
+        "ImagePublicId": "",
+        "UpdatedDateTime": "",
+        "CreationDateTime": "",
+        "DownloadHistories": [
+          {
+            "Id": "21eae76e54-2b14-48c7-a097-2c086c01bc6a-download",
+            "MovieTitile": "The Chosen Season 2",
+            "ContentType": "Series",
+            "Duration": "2:30:15",
+            "FileFormat": "mp4",
+            "Size": "250mb",
+            "BitRate": "5Mbps",
+            "status": "Complete",
+            "Resolution": "UltraHd",
+            "DownloadDate": "13/07/2023"
+          },
+          {
+            "Id": "22eae76e54-2b14-48c7-a097-2c086c01bc6a-download",
+            "MovieTitile": "Beast Of No Nation",
+            "ContentType": "Movie",
+            "Duration": "2:01:10",
+            "FileFormat": "mp4",
+            "Size": "293mb",
+            "BitRate": "5Mbps",
+            "status": "Complete",
+            "Resolution": "QuadHd",
+            "DownloadDate": "9/08/2023"
+          },
+          {
+            "Id": "23eae76e54-2b14-48c7-a097-2c086c01bc6a-download",
+            "MovieTitile": "A Cindarella Story",
+            "ContentType": "Movie",
+            "Duration": "1:30:15",
+            "FileFormat": "mp4",
+            "Size": "350mb",
+            "BitRate": "5Mbps",
+            "status": "Pending",
+            "Resolution": "UltraHd",
+            "DownloadDate": "9/08/2023"
+          }
+        ],
+        "ViewingHistories": [
+          {
+            "Id": "21eae76e54-2b14-48c7-a097-2c086c01bc6a-view",
+            "MovieTitile": "The Chosen",
+            "ContentType": "Series",
+            "Duration": "2:30:15",
+            "StartDateTime": "",
+            "EndDateTime": "",
+            "Progress": "36:05",
+            "Ratings": "5"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "Id": "eae76e54-2b14-48c7-a097-2c086c01bc6b",
+    "FirstName": "Saviour",
+    "LastName": "Omeni",
+    "UserName": "daemon",
+    "EmailAddress": "omenigph@gmail.com",
+    "Password": "",
+    "Profiles": [
+      {
+        "Id": "21eae76e54-2b14-48c7-a097-2c086c01bc6b",
+        "UserName": "daemon23",
+        "Address": "73, Olokodana Street, Ebute-Metta",
+        "DateOfBirth": "28/02/1952",
+        "PhoneNumber": "09066351201",
+        "Gender": "Male",
+        "ImageUrl": "",
+        "ImagePublicId": "",
+        "UpdatedDateTime": "",
+        "CreationDateTime": "",
+        "DownloadHistories": [
+          {
+            "Id": "21eae76e54-2b14-48c7-a097-2c086c01bc6b-download",
+            "MovieTitile": "Tekken 3",
+            "ContentType": "Movie",
+            "Duration": "1:30:15",
+            "FileFormat": "mp4",
+            "Size": "350mb",
+            "BitRate": "6Mbps",
+            "status": "Complete",
+            "Resolution": "FullUltraHd",
+            "DownloadDate": "13/07/2020"
+          }
+        ],
+        "ViewingHistories": [
+          {
+            "Id": "21eae76e54-2b14-48c7-a097-2c086c01bc6b-view",
+            "MovieTitile": "Tekken 3",
+            "ContentType": "Movie",
+            "Duration": "1:30:15",
+            "StartDateTime": "",
+            "EndDateTime": "",
+            "Progress": "1:15:05",
+            "Ratings": "7"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "Id": "eae76e54-2b14-48c7-a097-2c086c01bc7b",
+    "FirstName": "Ayomide",
+    "LastName": "Kadri",
+    "UserName": "Lami",
+    "EmailAddress": "ayomide.kadiri@spred.media",
+    "Password": "",
+    "Profiles": [
+      {
+        "Id": "21eae76e54-2b14-48c7-a097-2c086c01bc7b",
+        "UserName": "Lami_studios",
+        "Address": "20, Kadiri Oladimeji Street, Amikanle",
+        "DateOfBirth": "20/05/2000",
+        "PhoneNumber": "09032957265",
+        "Gender": "Female",
+        "ImageUrl": "",
+        "ImagePublicId": "",
+        "UpdatedDateTime": "",
+        "CreationDateTime": "",
+        "DownloadHistories": [
+          {
+            "Id": "21eae76e54-2b14-48c7-a097-2c086c01bc7b-download",
+            "MovieTitile": "The Men's Club season 1",
+            "ContentType": "Series",
+            "Duration": "3:30:15",
+            "FileFormat": "mp4",
+            "Size": "550mb",
+            "BitRate": "5Mbps",
+            "status": "Complete",
+            "Resolution": "FullHd",
+            "DownloadDate": "18/07/2020"
+          }
+        ],
+        "ViewingHistories": [
+          {
+            "Id": "21eae76e54-2b14-48c7-a097-2c086c01bc7b-view",
+            "MovieTitile": "The Men's Club season 1",
+            "ContentType": "Series",
+            "Duration": "3:30:15",
+            "StartDateTime": "",
+            "EndDateTime": "",
+            "Progress": "1:30:05",
+            "Ratings": "8"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "Id": "e6e76e54-2b14-48c7-a097-2c086c01bc6a",
+    "FirstName": "Charles",
+    "LastName": "Avackaa",
+    "UserName": "Avackaa",
+    "EmailAddress": "cavackaa@gmail.com",
+    "Password": "",
+    "Profiles": [
+      {
+        "Id": "21e6e76e54-2b14-48c7-a097-2c086c01bc6a",
+        "UserName": "Avackaa",
+        "Address": "10, Meadow hall street, Ikate-Elegushi",
+        "DateOfBirth": "18/08/1992",
+        "PhoneNumber": "07064313834",
+        "Gender": "Male",
+        "ImageUrl": "",
+        "ImagePublicId": "",
+        "UpdatedDateTime": "",
+        "CreationDateTime": "",
+        "DownloadHistories": [
+          {
+            "Id": "21e6e76e54-2b14-48c7-a097-2c086c01bc6adownload",
+            "MovieTitile": "Bad Bitches",
+            "ContentType": "Movie",
+            "Duration": "1:45:15",
+            "FileFormat": "mp4",
+            "Size": "236mb",
+            "BitRate": "6Mbps",
+            "status": "Pending",
+            "Resolution": "FullHd",
+            "DownloadDate": "18/07/2020"
+          },
+          {
+            "Id": "22e6e76e54-2b14-48c7-a097-2c086c01bc6adownload",
+            "MovieTitile": "Man Of Steel",
+            "ContentType": "Movie",
+            "Duration": "2:45:15",
+            "FileFormat": "mp4",
+            "Size": "336mb",
+            "BitRate": "7Mbps",
+            "status": "Complete",
+            "Resolution": "FullUltraHd",
+            "DownloadDate": "16/07/2020"
+          }
+        ],
+        "ViewingHistories": [
+          {
+            "Id": "22e6e76e54-2b14-48c7-a097-2c086c01bc6a-view",
+            "MovieTitile": "Man Of Steel",
+            "ContentType": "Movie",
+            "Duration": "2:45:15",
+            "StartDateTime": "",
+            "EndDateTime": "",
+            "Progress": "1::05",
+            "Ratings": "8"
+          }
+        ]
+      }
+    ]
+  }
+]

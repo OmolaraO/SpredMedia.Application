@@ -1,0 +1,46 @@
+version: '3.4'
+
+services:
+  spredmedia.authentication.api:
+    image: spredmedia/spredmediaauthenticationapi:v2
+    restart:
+      unless-stopped
+    build:
+      context: .
+      dockerfile: SpredMedia.Authentication.API/Dockerfile
+    depends_on:
+      - database
+
+  spredmedia.apigateway:
+    image: spredmedia/spredmediaapigateway:v2
+    build:
+      context: .
+      dockerfile: SpredMedia.APIGateWay/Dockerfile
+    restart:
+      unless-stopped
+    depends_on:
+      - spredmedia.authentication.api
+      - spredmedia.notification.api
+
+  database:
+    image: mcr.microsoft.com/mssql/server:latest
+    ports:
+      - 1433:1433
+    restart:
+      unless-stopped
+    volumes:
+      - ./database/data:/var/opt/mssql/data
+      - ./database/log:/var/opt/mssql/log
+      - ./database/secrets:/var/opt/mssql/secrets
+    environment:
+      - ACCEPT_EULA=Y
+      - SA_PASSWORD=Nono_080
+
+  spredmedia.notification.api:
+    image: spredmedia/spredmedianotificationapi:v2
+    restart:
+      unless-stopped
+    build:
+      context: .
+      dockerfile: SpredMedia.Notification.API/Dockerfile
+

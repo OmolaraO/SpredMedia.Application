@@ -1,0 +1,55 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>disable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="DataSeeding\ClientEndpointSeed.json" />
+    <None Remove="DataSeeding\ClientSeed.json" />
+    <None Remove="DataSeeding\EndpointSeed.json" />
+    <None Remove="DataSeeding\Roles.json" />
+    <None Remove="DataSeeding\UserSeed.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="DataSeeding\ClientEndpointSeed.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="DataSeeding\ClientSeed.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="DataSeeding\EndpointSeed.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="DataSeeding\Roles.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="DataSeeding\UserSeed.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="6.0.9" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.9" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="6.0.9">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.9" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="6.0.9">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\SpredMedia.Authentication.Core\SpredMedia.Authentication.Core.csproj" />
+    <ProjectReference Include="..\SpredMedia.Authentication.Model\SpredMedia.Authentication.Model.csproj" />
+    <ProjectReference Include="..\SpredMedia.CommonLibrary\SpredMedia.CommonLibrary.csproj" />
+  </ItemGroup>
+
+</Project>

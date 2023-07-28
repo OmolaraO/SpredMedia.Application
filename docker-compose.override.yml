@@ -1,0 +1,34 @@
+version: '3.4'
+
+services:
+  spredmedia.authentication.api:
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ASPNETCORE_URLS=http://+:80
+      - ConnectionStrings__DefaultConnection=Server=127.0.0.1,1433;Database=SpredMediaAuthenticationLocal;User=SA;Password=Nono_080;
+      - ConnectionStrings__AzureConnection=DefaultEndpointsProtocol=https;AccountName=spredmedia;AccountKey=CUI6RuQLLraFHjU8z7Tbo5W4HSJvkT30LSuXcRd8Ui1PATd6oAtnJ/DnqePrG/mjLOENJdUM8jeO+AStuxJTjg==;EndpointSuffix=core.windows.net
+    volumes:
+      - ${APPDATA}/Microsoft/UserSecrets:/root/.microsoft/usersecrets:ro
+      - ${APPDATA}/ASP.NET/Https:/root/.aspnet/https:ro
+      # - C:\Users\USER\source\repos\SpredMedia.Microservices\SpredMedia.Authentication.API\bin\Debug\net6.0:/app
+
+  spredmedia.apigateway:
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ASPNETCORE_URLS=https://+:7100;http://+:5281
+    ports:
+      - 7100:7100
+      - 5281:5281
+    volumes:
+      - ${APPDATA}/Microsoft/UserSecrets:/root/.microsoft/usersecrets:ro
+      - ${APPDATA}/ASP.NET/Https:/root/.aspnet/https:ro
+      # - C:\Users\USER\source\repos\SpredMedia.Microservices\SpredMedia.APIGateWay\bin\Debug\net6.0:/app
+
+  spredmedia.notification.api:
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ASPNETCORE_URLS=http://+:80
+    volumes:
+      - ${APPDATA}/Microsoft/UserSecrets:/root/.microsoft/usersecrets:ro
+      - ${APPDATA}/ASP.NET/Https:/root/.aspnet/https:ro/
+      # - C:\Users\USER\source\repos\SpredMedia.Microservices\SpredMedia.Notification.API\bin\Debug\net6.0:/app

@@ -1,0 +1,38 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\SpredMedia.UserManagement.Model\SpredMedia.UserManagement.Model.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="Interfaces\" />
+    <None Remove="DTOs\" />
+    <None Remove="Services\" />
+    <None Remove="Utilities\" />
+    <None Remove="DTOs\HistoryDto\" />
+    <None Remove="Utilities\Settings\" />
+    <None Remove="Utilities\Profiles\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Interfaces\" />
+    <Folder Include="DTOs\" />
+    <Folder Include="Services\" />
+    <Folder Include="Utilities\" />
+    <Folder Include="DTOs\HistoryDto\" />
+    <Folder Include="Utilities\Settings\" />
+    <Folder Include="Utilities\Profiles\" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="CloudinaryDotNet" Version="1.21.0" />
+    <PackageReference Include="AutoMapper" Version="12.0.1" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SpredMedia.CommonLibrary\SpredMedia.CommonLibrary.csproj" />
+  </ItemGroup>
+
+</Project>
